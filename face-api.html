@@ -42,7 +42,7 @@
 
     async function detectFace(data_uri){
         const image = new Image();
-        image.src= '1.jpg';
+        image.src= data_uri;
         
         await faceapi.nets.tinyFaceDetector.loadFromUri('/models');
        
